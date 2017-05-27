@@ -1,0 +1,355 @@
+#ban {
+  width: 100%;
+  height: 5.23438rem; }
+  #ban .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.area-activity-container {
+  padding: 0 0.15625rem;
+  overflow: hidden;
+  background-color: #381571; }
+  .area-activity-container .swiper-slide p {
+    padding: 0 0.15625rem;
+    font-size: 14px;
+    height: 0.9375rem;
+    line-height: 0.9375rem;
+    color: #d1cef8;
+    background-color: #381571;
+    border-bottom: 0.15625rem solid #23113e; }
+    [data-dpr="2"] .area-activity-container .swiper-slide p {
+      font-size: 28px; }
+    [data-dpr="3"] .area-activity-container .swiper-slide p {
+      font-size: 42px; }
+  .area-activity-container .swiper-slide.swiper-slide-active p {
+    font-size: 16px;
+    color: #f9ef1b;
+    padding: 0 0.07813rem; }
+    [data-dpr="2"] .area-activity-container .swiper-slide.swiper-slide-active p {
+      font-size: 32px; }
+    [data-dpr="3"] .area-activity-container .swiper-slide.swiper-slide-active p {
+      font-size: 48px; }
+
+.news {
+  border: 0.15625rem solid #23113e;
+  background-color: #f1f1f1;
+  border-left: none;
+  border-right: none;
+  padding: 0 0.15625rem; }
+  .news .left {
+    overflow: hidden;
+    float: left; }
+    .news .left p {
+      display: inline-block;
+      float: left;
+      font-size: 20px;
+      color: #35a5f8;
+      line-height: 0.71875rem;
+      text-transform: uppercase;
+      font-style: italic;
+      vertical-align: middle; }
+      [data-dpr="2"] .news .left p {
+        font-size: 40px; }
+      [data-dpr="3"] .news .left p {
+        font-size: 60px; }
+    .news .left:after {
+      content: "";
+      display: block;
+      width: 0.57813rem;
+      height: 0.71875rem;
+      float: left;
+      background: url("../images/lb.png") no-repeat center;
+      background-size: 80%;
+      vertical-align: middle;
+      margin-left: 0.3125rem; }
+  .news .right {
+    margin-left: 2.1875rem;
+    overflow: hidden;
+    height: 0.71875rem;
+    position: relative; }
+    .news .right .newsList {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /*-webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;*/ }
+      .news .right .newsList .news-item p {
+        font-size: 18px;
+        width: 7.34375rem;
+        line-height: 0.71875rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #2f2f2f; }
+        [data-dpr="2"] .news .right .newsList .news-item p {
+          font-size: 36px; }
+        [data-dpr="3"] .news .right .newsList .news-item p {
+          font-size: 54px; }
+
+.nav {
+  overflow: hidden;
+  background-color: #e9e8ec; }
+  .nav .nav-wrap {
+    padding: 0.3125rem;
+    height: 2.85938rem; }
+    .nav .nav-wrap .list {
+      float: left;
+      text-align: center;
+      width: 2.34375rem; }
+      .nav .nav-wrap .list .img {
+        height: 1.28125rem;
+        width: 1.28125rem;
+        border-radius: 1.28125rem;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 0.125rem 0;
+        margin: 0 auto; }
+      .nav .nav-wrap .list p {
+        font-size: 18px;
+        color: #222222;
+        line-height: 0.65625rem;
+        margin-top: 0.15625rem; }
+        [data-dpr="2"] .nav .nav-wrap .list p {
+          font-size: 36px; }
+        [data-dpr="3"] .nav .nav-wrap .list p {
+          font-size: 54px; }
+      .nav .nav-wrap .list .img1 {
+        background-image: url("../images/img1.png"); }
+      .nav .nav-wrap .list .img2 {
+        background-image: url("../images/img2.png"); }
+      .nav .nav-wrap .list .img3 {
+        background-image: url("../images/img3.png"); }
+      .nav .nav-wrap .list .img4 {
+        background-image: url("../images/img4.png"); }
+
+.title {
+  height: 1.29688rem;
+  padding: 0.15625rem 0;
+  background: linear-gradient(to right, #5f339f 10%, #de3b7f 90%);
+  text-align: center; }
+  .title p {
+    display: inline-block;
+    font-size: 26px;
+    color: #fefefe;
+    line-height: 0.98438rem; }
+    [data-dpr="2"] .title p {
+      font-size: 52px; }
+    [data-dpr="3"] .title p {
+      font-size: 78px; }
+  .title span {
+    color: #a4ddf8;
+    text-transform: uppercase;
+    font-size: 14px; }
+    [data-dpr="2"] .title span {
+      font-size: 28px; }
+    [data-dpr="3"] .title span {
+      font-size: 42px; }
+
+.p10 {
+  padding: 0 0.23438rem; }
+
+.suggested-videos {
+  background-color: #23113e; }
+
+.video-content {
+  border: 0.10938rem solid #4f4165;
+  border-radius: 0.23438rem;
+  overflow: hidden;
+  height: 5.35938rem;
+  position: relative;
+  background-color: transparent; }
+  .video-content img {
+    width: 100%;
+    height: 100%; }
+  .video-content .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.51563rem;
+    margin-left: -0.51563rem;
+    width: 1.03125rem;
+    height: 1.03125rem;
+    background: url("../images/play.png") no-repeat center;
+    background-size: 100%; }
+
+.description {
+  padding-bottom: 0.46875rem; }
+  .description h6 {
+    margin-top: 0.15625rem;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 0.71875rem; }
+    [data-dpr="2"] .description h6 {
+      font-size: 40px; }
+    [data-dpr="3"] .description h6 {
+      font-size: 60px; }
+  .description p {
+    font-size: 14px;
+    color: #dad8d8;
+    line-height: 1.5; }
+    [data-dpr="2"] .description p {
+      font-size: 28px; }
+    [data-dpr="3"] .description p {
+      font-size: 42px; }
+
+.sub-title {
+  height: 1.25rem; }
+  .sub-title p {
+    font-size: 20px;
+    color: #f9f9f9;
+    line-height: 1.25rem;
+    display: inline-block;
+    vertical-align: middle; }
+    [data-dpr="2"] .sub-title p {
+      font-size: 40px; }
+    [data-dpr="3"] .sub-title p {
+      font-size: 60px; }
+  .sub-title:before {
+    content: "";
+    display: inline-block;
+    width: 0.0625rem;
+    height: 0.46875rem;
+    background-color: #ffda44;
+    vertical-align: middle;
+    margin-right: 0.10938rem; }
+
+.past-program {
+  border-bottom: 0.09375rem solid #f0f0f0; }
+  .past-program .sub-title p {
+    color: #010101; }
+  .past-program .sub-title:before {
+    background-color: #010101; }
+  .past-program .sub-title .fr {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.25rem; }
+    [data-dpr="2"] .past-program .sub-title .fr {
+      font-size: 32px; }
+    [data-dpr="3"] .past-program .sub-title .fr {
+      font-size: 48px; }
+  .past-program .video-list {
+    overflow: hidden;
+    margin-right: -0.26563rem; }
+    .past-program .video-list .video-content {
+      width: 4.625rem;
+      height: 3.125rem;
+      border-color: #d3e7fb; }
+    .past-program .video-list .video-item {
+      width: 4.625rem;
+      float: left;
+      margin-right: 0.26563rem; }
+      .past-program .video-list .video-item h6 {
+        font-size: 20px;
+        color: #2c2b2b;
+        line-height: 0.71875rem;
+        margin-top: 0.15625rem;
+        padding-left: 0.10938rem; }
+        [data-dpr="2"] .past-program .video-list .video-item h6 {
+          font-size: 40px; }
+        [data-dpr="3"] .past-program .video-list .video-item h6 {
+          font-size: 60px; }
+      .past-program .video-list .video-item p {
+        font-size: 14px;
+        color: #585656;
+        line-height: 1.5;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-bottom: 0.3125rem;
+        padding-left: 0.10938rem; }
+        [data-dpr="2"] .past-program .video-list .video-item p {
+          font-size: 28px; }
+        [data-dpr="3"] .past-program .video-list .video-item p {
+          font-size: 42px; }
+
+.partners {
+  background-color: #23113e;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem; }
+  .partners .partner {
+    border: 0.0625rem solid #a6a4fd;
+    height: 3.75rem;
+    padding: 0.07813rem;
+    margin-bottom: 0.25rem;
+    background-color: #5548a0; }
+    .partners .partner img {
+      width: 5.8125rem;
+      height: 3.46875rem;
+      vertical-align: middle; }
+    .partners .partner p {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 0.3125rem;
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: bold;
+      width: 3.28125rem;
+      text-align: center; }
+      [data-dpr="2"] .partners .partner p {
+        font-size: 40px; }
+      [data-dpr="3"] .partners .partner p {
+        font-size: 60px; }
+
+footer {
+  height: 4.90625rem;
+  background: linear-gradient(to bottom, #23113e 10%, #cc2268 90%); }
+  footer .top {
+    color: #ffffff;
+    padding-top: 0.625rem;
+    text-align: center;
+    line-height: 1.5; }
+    footer .top h3 {
+      font-size: 20px; }
+      [data-dpr="2"] footer .top h3 {
+        font-size: 40px; }
+      [data-dpr="3"] footer .top h3 {
+        font-size: 60px; }
+    footer .top p {
+      font-size: 14px; }
+      [data-dpr="2"] footer .top p {
+        font-size: 28px; }
+      [data-dpr="3"] footer .top p {
+        font-size: 42px; }
+  footer .center .logo {
+    width: 1.71875rem;
+    height: 1.5625rem;
+    background: url("../images/logo.png") no-repeat center;
+    background-size: 100%;
+    margin: 0 0.3125rem; }
+  footer .center .contact {
+    padding-top: 0.3125rem; }
+    footer .center .contact p {
+      width: 5.625rem;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 1.5; }
+      [data-dpr="2"] footer .center .contact p {
+        font-size: 24px; }
+      [data-dpr="3"] footer .center .contact p {
+        font-size: 36px; }
+  footer .center .ma {
+    width: 1.29688rem;
+    height: 1.29688rem;
+    margin-top: 0.15625rem; }
+    footer .center .ma img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0 0.15625rem;
+      margin-top: 0.15625rem; }
+  footer h5 {
+    text-align: center;
+    font-size: 12px;
+    color: #fffefe;
+    margin-top: 0.3125rem; }
+    [data-dpr="2"] footer h5 {
+      font-size: 24px; }
+    [data-dpr="3"] footer h5 {
+      font-size: 36px; }
+
+/*# sourceMappingURL=index.css.map */
