@@ -110,14 +110,14 @@
         padding: 0.125rem 0;
         margin: 0 auto; }
       .nav .nav-wrap .list p {
-        font-size: 18px;
+        font-size: 16px;
         color: #222222;
         line-height: 0.65625rem;
         margin-top: 0.15625rem; }
         [data-dpr="2"] .nav .nav-wrap .list p {
-          font-size: 36px; }
+          font-size: 32px; }
         [data-dpr="3"] .nav .nav-wrap .list p {
-          font-size: 54px; }
+          font-size: 48px; }
       .nav .nav-wrap .list .img1 {
         background-image: url("../images/img1.png"); }
       .nav .nav-wrap .list .img2 {

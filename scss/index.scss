@@ -135,7 +135,7 @@
         margin: 0 auto;
       }
       p {
-        @include fz(18px);
+        @include fz(16px);
         color: #222222;
         line-height: rem(42rem);
         margin-top: rem(10rem);

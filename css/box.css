@@ -1,5 +1,9 @@
+body {
+  min-height: 100vh;
+  background-color: #021b47; }
+
 .content .mw640 {
-  height: 15rem;
+  min-height: 15rem;
   background: url("../images/box.jpg") no-repeat top center;
   background-size: 100%;
   position: relative; }
@@ -44,9 +48,22 @@
     z-index: 10;
     display: block;
     height: 1.23438rem;
-    background: url("../images/box-button.png") no-repeat center;
+    text-align: center;
+    margin-bottom: 0.23438rem;
     background-size: auto 100%;
     margin-top: 7.5rem; }
+    .content .mw640 .button a {
+      display: inline-block;
+      width: 4.0625rem;
+      height: 1.23438rem;
+      margin: 0 0.07813rem;
+      background-size: 100%; }
+      .content .mw640 .button a.nowOpen {
+        background: url("../images/boxButton.png") no-repeat center;
+        background-size: 100%; }
+      .content .mw640 .button a.my {
+        background: url("../images/mygiftB.png") no-repeat center;
+        background-size: 100%; }
   .content .mw640 > p {
     position: relative;
     z-index: 10;
@@ -76,7 +93,12 @@
       border-radius: 0.09375rem;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      margin-left: -4.6875rem;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
       background-color: #ffe25d; }
       .content .mw640 .popM .popM-content .close {
         position: absolute;
@@ -117,6 +139,211 @@
             font-size: 40px; }
           [data-dpr="3"] .content .mw640 .popM .popM-content .rule p {
             font-size: 60px; }
+
+.OContent .mw640 {
+  min-height: 15rem;
+  background: url("../images/openbg.jpg") no-repeat top center;
+  background-size: 100% auto; }
+  .OContent .mw640 .list {
+    padding-top: 3.125rem;
+    overflow: hidden;
+    padding-left: 0.3125rem;
+    margin-right: -0.15625rem; }
+    .OContent .mw640 .list .item {
+      float: left;
+      margin-left: 1.14063rem;
+      width: 7.03125rem; }
+      .OContent .mw640 .list .item .imgW {
+        width: 7.5rem;
+        height: 7.5rem;
+        background: url("../images/giftNew.png") no-repeat center;
+        background-size: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        overflow: hidden; }
+        .OContent .mw640 .list .item .imgW img {
+          width: 40%;
+          margin-bottom: 0.3125rem; }
+        .OContent .mw640 .list .item .imgW h3 {
+          font-size: 22px;
+          color: #ffe50c;
+          font-weight: bold; }
+          [data-dpr="2"] .OContent .mw640 .list .item .imgW h3 {
+            font-size: 44px; }
+          [data-dpr="3"] .OContent .mw640 .list .item .imgW h3 {
+            font-size: 66px; }
+        .OContent .mw640 .list .item .imgW p {
+          font-size: 14px;
+          color: #ffffff; }
+          [data-dpr="2"] .OContent .mw640 .list .item .imgW p {
+            font-size: 28px; }
+          [data-dpr="3"] .OContent .mw640 .list .item .imgW p {
+            font-size: 42px; }
+      .OContent .mw640 .list .item p {
+        text-align: center;
+        font-size: 12px;
+        color: #e4e6a2;
+        line-height: 1.5;
+        margin-bottom: 0.15625rem; }
+        [data-dpr="2"] .OContent .mw640 .list .item p {
+          font-size: 24px; }
+        [data-dpr="3"] .OContent .mw640 .list .item p {
+          font-size: 36px; }
+  .OContent .mw640 .getButton {
+    height: 1.5625rem;
+    background: url("../images/9.png") no-repeat center;
+    background-size: auto 100%;
+    margin-top: 0.3125rem; }
+  .OContent .mw640 .giftList {
+    padding-top: 3.59375rem;
+    padding-left: 0.5rem; }
+    .OContent .mw640 .giftList .item {
+      width: 9.125rem;
+      height: 3.32813rem;
+      background: url("../images/giftBg.png") no-repeat center;
+      background-size: 100%;
+      margin-bottom: 0.3125rem; }
+      .OContent .mw640 .giftList .item.get {
+        background-image: url("../images/getBg.png"); }
+      .OContent .mw640 .giftList .item .left {
+        width: 7.1875rem;
+        float: left; }
+        .OContent .mw640 .giftList .item .left img {
+          display: block;
+          width: 2.34375rem;
+          height: 2.34375rem;
+          margin-top: 0.3125rem;
+          margin-left: 0.3125rem;
+          float: left; }
+        .OContent .mw640 .giftList .item .left h4 {
+          text-align: center;
+          color: #f4083f;
+          font-size: 20px;
+          padding-top: 0.46875rem;
+          font-weight: bold;
+          margin-bottom: 0.3125rem; }
+          [data-dpr="2"] .OContent .mw640 .giftList .item .left h4 {
+            font-size: 40px; }
+          [data-dpr="3"] .OContent .mw640 .giftList .item .left h4 {
+            font-size: 60px; }
+        .OContent .mw640 .giftList .item .left p {
+          font-size: 20px;
+          color: #000000;
+          text-align: center; }
+          [data-dpr="2"] .OContent .mw640 .giftList .item .left p {
+            font-size: 40px; }
+          [data-dpr="3"] .OContent .mw640 .giftList .item .left p {
+            font-size: 60px; }
+      .OContent .mw640 .giftList .item .right {
+        float: left;
+        width: 1.875rem;
+        vertical-align: middle;
+        text-align: center; }
+        .OContent .mw640 .giftList .item .right:after {
+          content: '';
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+          width: 0; }
+        .OContent .mw640 .giftList .item .right p {
+          padding-top: 0.625rem;
+          display: inline-block;
+          font-size: 30px;
+          color: #fffee3;
+          line-height: 1;
+          vertical-align: middle; }
+          [data-dpr="2"] .OContent .mw640 .giftList .item .right p {
+            font-size: 60px; }
+          [data-dpr="3"] .OContent .mw640 .giftList .item .right p {
+            font-size: 90px; }
+.OContent .popM {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 0.3125rem;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .OContent .popM.popM3 {
+    display: none; }
+    .OContent .popM.popM3 .popM-content .rule p {
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 1.5; }
+      [data-dpr="2"] .OContent .popM.popM3 .popM-content .rule p {
+        font-size: 40px; }
+      [data-dpr="3"] .OContent .popM.popM3 .popM-content .rule p {
+        font-size: 60px; }
+  .OContent .popM.popM2 {
+    display: none; }
+    .OContent .popM.popM2 .popM-content {
+      height: 5.6875rem;
+      background: url("../images/success.png") no-repeat center;
+      background-size: 100% 100%; }
+  .OContent .popM.popM1 {
+    display: none; }
+  .OContent .popM .popM-content {
+    position: relative;
+    width: 8.125rem;
+    border: 0.09375rem solid #1d6ecc;
+    border-radius: 0.09375rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -4.0625rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: radial-gradient(#3c75d3, #204192);
+    padding: 0.78125rem;
+    background-size: auto 100%;
+    background-color: #08376c; }
+    .OContent .popM .popM-content .close {
+      position: absolute;
+      width: 1.5625rem;
+      height: 1.5625rem;
+      padding: 0.39063rem;
+      background: url("../images/close.png") no-repeat center;
+      background-size: 50%;
+      top: -0.78125rem;
+      right: -0.78125rem; }
+    .OContent .popM .popM-content .rule span {
+      float: left;
+      display: block;
+      font-size: 16px;
+      color: #000000;
+      line-height: 1.5; }
+      [data-dpr="2"] .OContent .popM .popM-content .rule span {
+        font-size: 32px; }
+      [data-dpr="3"] .OContent .popM .popM-content .rule span {
+        font-size: 48px; }
+    .OContent .popM .popM-content .rule p {
+      font-size: 14px;
+      color: #ffffff;
+      line-height: 1.5;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      text-align: center; }
+      [data-dpr="2"] .OContent .popM .popM-content .rule p {
+        font-size: 28px; }
+      [data-dpr="3"] .OContent .popM .popM-content .rule p {
+        font-size: 42px; }
+    .OContent .popM .popM-content .button {
+      height: 1.25rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: auto 100%;
+      display: inline-block;
+      width: 100%;
+      margin-top: 0.3125rem; }
+      .OContent .popM .popM-content .button.sure {
+        background-image: url("../images/sure.png"); }
+
+.myGift .mw640 {
+  background-image: url("../images/mygiftbg.jpg"); }
 
 @keyframes upDown {
   0% {

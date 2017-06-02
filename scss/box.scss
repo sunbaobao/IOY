@@ -12,11 +12,15 @@
 @function rem($px) {
   @return ($px/64);
 }
+body{
+  min-height: 100vh;
+  background-color: #021b47;
 
+}
 .content {
   .mw640 {
     //min-height: 100vh;
-    height: rem(960rem);
+    min-height: rem(960rem);
     background: url("../images/box.jpg") no-repeat top center;
     background-size: 100%;
     position: relative;
@@ -58,7 +62,25 @@
       z-index: 10;
       display: block;
       height: rem(79rem);
-      background: url("../images/box-button.png") no-repeat center;
+      text-align: center;
+      margin-bottom:rem(15rem);
+      a{
+        display: inline-block;
+        width:rem(260rem);
+        height: rem(79rem);
+        margin: 0 rem(5rem);
+        background-size: 100%;
+        &.nowOpen{
+          background: url("../images/boxButton.png") no-repeat center;
+          background-size: 100%;
+        }
+        &.my{
+          background: url("../images/mygiftB.png") no-repeat center;
+          background-size: 100%;
+
+        }
+      }
+
       background-size: auto 100%;
       margin-top: rem(480rem);
     }
@@ -88,7 +110,12 @@
         border-radius: rem(6rem);
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        margin-left:rem(-300rem);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
         background-color: #ffe25d;
         .close {
           position: absolute;
@@ -125,6 +152,237 @@
       }
     }
   }
+}
+
+.OContent {
+  .mw640 {
+
+    min-height: rem(960rem);
+    background: url("../images/openbg.jpg") no-repeat top center;
+    background-size: 100% auto;
+    .list {
+      padding-top: rem(200rem);
+      overflow: hidden;
+      padding-left: rem(20rem);
+      margin-right: rem(-10rem);
+
+      .item {
+        float: left;
+        margin-left: rem(73rem);
+        width: rem(450rem);
+        .imgW {
+          width: rem(480rem);
+          height: rem(480rem);
+          background: url("../images/giftNew.png") no-repeat center;
+          background-size: 100%;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          overflow: hidden;
+
+          img {
+            //display: block;
+            width: 40%;
+            //max-width: 70%;
+            margin-bottom: rem(20rem);
+          }
+          h3 {
+            @include fz(22px);
+            color: #ffe50c;
+            font-weight: bold;
+          }
+          p {
+            @include fz(14px);
+            color: #ffffff;
+
+          }
+
+        }
+        //margin-right: rem(12rem);
+        p {
+          text-align: center;
+          @include fz(12px);
+          color: #e4e6a2;
+          line-height: 1.5;
+          margin-bottom: rem(10rem);
+        }
+      }
+
+    }
+    .getButton {
+      height: rem(100rem);
+      background: url("../images/9.png") no-repeat center;
+      background-size: auto 100%;
+      margin-top: rem(20rem);
+    }
+    .giftList {
+      padding-top: rem(230rem);
+      padding-left: rem(32rem);
+      .item {
+        &.get{
+          background-image: url("../images/getBg.png");
+        }
+        width: rem(584rem);
+        height: rem(213rem);
+        background: url("../images/giftBg.png") no-repeat center;
+        background-size: 100%;
+        margin-bottom:rem(20rem);
+        .left {
+          width: rem(460rem);
+          float: left;
+          img {
+            display: block;
+            width: rem(150rem);
+            height: rem(150rem);
+            margin-top: rem(20rem);
+            margin-left: rem(20rem);
+            float: left;
+          }
+          h4 {
+            text-align: center;
+            color: #f4083f;
+            @include fz(20px);
+            padding-top: rem(30rem);
+            font-weight: bold;
+            margin-bottom:rem(20rem);
+          }
+          p {
+            @include fz(20px);
+            color: #000000;
+            text-align: center;
+          }
+        }
+        .right{
+          //display: table-cell;
+          float: left;
+          width:rem(120rem);
+          vertical-align: middle;
+          text-align: center;
+          &:after{
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            width: 0;
+          }
+          p{
+            padding-top:rem(40rem);
+            display: inline-block;
+            @include fz(30px);
+            color: #fffee3;
+            line-height:1;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+
+  .popM {
+    &.popM3{
+      display: none;
+      .popM-content{
+        .rule{
+          p{
+            @include fz(20px);
+            color: #ffffff;
+            line-height:1.5;
+
+          }
+        }
+      }
+    }
+    &.popM2{
+      display: none;
+
+      .popM-content{
+        height:rem(364rem);
+        background: url("../images/success.png") no-repeat center;
+        background-size: 100% 100%;
+
+      }
+
+    }
+    &.popM1{
+      display: none;
+    }
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0 rem(20rem);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    //display: none;
+    .popM-content {
+      //padding-bottom: rem(100rem);
+      position: relative;
+      width: rem(520rem);
+      //height: rem(760rem);
+      border: rem(6rem) solid #1d6ecc;
+      border-radius: rem(6rem);
+      top: 50%;
+      left: 50%;
+      margin-left:rem(-260rem);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: radial-gradient(#3c75d3,#204192);
+      padding: rem(50rem);
+      background-size: auto 100%;
+      background-color: #08376c;
+      .close {
+        position: absolute;
+        width: rem(100rem);
+        height: rem(100rem);
+        padding: rem(25rem);
+        background: url("../images/close.png") no-repeat center;
+        background-size: 50%;
+        top: rem(-50rem);
+        right: rem(-50rem);
+      }
+      .rule {
+        //padding-top: rem(607rem);
+        span {
+          float: left;
+          display: block;
+          @include fz(16px);
+          color: #000000;
+          line-height: 1.5;
+        }
+        p {
+          @include fz(14px);
+          color: #ffffff;
+          line-height: 1.5;
+          padding-left: rem(40rem);
+          padding-right: rem(40rem);
+          text-align: center;
+
+
+        }
+      }
+      .button{
+        height:rem(80rem);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto 100%;
+        display: inline-block;
+        width:100%;
+        margin-top:rem(20rem);
+
+        &.sure{
+          background-image: url("../images/sure.png");
+        }
+      }
+    }
+  }
+}
+
+.myGift .mw640 {
+  background-image: url("../images/mygiftbg.jpg");
 }
 
 @keyframes upDown {
