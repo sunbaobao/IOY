@@ -102,6 +102,53 @@ body {
   }
 }
 
+.video {
+  .mw640 {
+    padding-top: 1px;
+    background: url("../images/videoDes_02.jpg") no-repeat center;
+    background-size: 100%;
+  }
+  .videoW {
+    height: rem(388rem);
+    margin-top: rem(174rem);
+    &.paused {
+      &:after {
+        display: none;
+      }
+    }
+
+    text-align: center;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: rem(125rem);
+      height: rem(125rem);
+      top: 50%;
+      left: 50%;
+      margin-top: rem(-62.5rem);
+      margin-left: rem(-62.5rem);
+
+      background: url("../images/play.png") no-repeat center;
+      background-size: 100%;
+    }
+    video {
+      width: rem(616rem);
+      height: rem(388rem);
+      border: rem(4rem) solid #8e8aa1;
+    }
+  }
+}
+
+.benefit {
+  .mw640 {
+    height: rem(744rem);
+    background: url("../images/benefit_02.jpg") no-repeat center;
+    background-size: 100%;
+  }
+}
+
 .ticket {
   .mw640 {
     padding: 0 rem(18rem);
@@ -128,8 +175,8 @@ body {
     }
     .ticket-detail {
       overflow: hidden;
-      margin-top:rem(5rem);
-      margin-bottom:rem(5rem);
+      margin-top: rem(5rem);
+      margin-bottom: rem(5rem);
       .left {
         height: rem(242rem);
         background-color: #f2f2f2;
@@ -148,124 +195,132 @@ body {
           content: "";
           display: inline-block;
           height: 100%;
-          width:0;
+          width: 0;
           vertical-align: middle;
         }
       }
-      .right{
+      .right {
         height: rem(242rem);
         background-color: #ffda44;
-        width:rem(450rem);
+        width: rem(450rem);
         float: left;
-        padding-top:rem(10rem);
+        padding-top: rem(10rem);
         line-height: 1;
         text-align: center;
-        h6{
+        h6 {
           @include fz(40px);
           font-weight: bold;
           color: #000000;
         }
-        p{
+        p {
           @include fz(22px);
           color: #000000;
-          line-height:1;
+          line-height: 1;
         }
-        span{
+        span {
           display: inline-block;
-          width:rem(214rem);
-          height:rem(60rem);
+          width: rem(214rem);
+          height: rem(60rem);
           @include fz(28px);
-          line-height:rem(60rem);
+          line-height: rem(60rem);
           background-color: #eb0909;
           color: #ffffff;
-          margin-top:rem(20rem);
+          margin-top: rem(20rem);
         }
       }
     }
-    p{
+    p {
       @include fz(20px);
       color: #ffffff;
-      span{
+      span {
         color: #ffda44;
         line-height: 1.5;
       }
     }
   }
 }
-.gift{
-  .mw640{
-    padding:rem(13rem);
+
+.gift {
+  .mw640 {
+    padding: rem(13rem);
     background-color: #ffda44;
-    height:rem(640rem);
-    .gift-list{
-      margin-right:rem(-7rem);
-      .gift-item{
+    height: rem(640rem);
+    .gift-list {
+      margin-right: rem(-7rem);
+      .gift-item {
         float: left;
-        margin-right:rem(7rem);
-        margin-bottom:rem(7rem);
-        width:rem(200rem);
-        height:rem(200rem);
+        margin-right: rem(7rem);
+        margin-bottom: rem(7rem);
+        width: rem(200rem);
+        height: rem(200rem);
         background-color: #ffffff;
-        .imgW{
+        .imgW {
           display: table-cell;
           vertical-align: middle;
-          height:rem(156rem);
+          height: rem(156rem);
           width: rem(200rem);
           text-align: center;
-          img{
+          img {
             min-width: 60%;
             max-width: 60%;
           }
         }
-        p{
+        p {
           text-align: center;
           @include fz(12px);
           color: #000000;
-          line-height:1.5;
+          line-height: 1.5;
         }
       }
     }
   }
 }
-footer{
-  .mw640{
-    height:rem(936rem);
-    background: url("../images/c-footer_02.jpg") no-repeat center;
-    background-size: 100%;
-    .listW{
-      padding-top:rem(190rem);
-      margin-right:rem(-22rem);
-      .item{
-        width:rem(188rem);
-        height:rem(115rem);
+
+footer {
+  .mw640 {
+    min-height: rem(752rem);
+    background: url("../images/footerBg_03.jpg") no-repeat center;
+    background-size: 100% 100%;
+    .listW {
+      padding-top: rem(190rem);
+      margin-right: rem(-22rem);
+      .item {
+        width: rem(188rem);
+        height: rem(115rem);
         padding: rem(6rem);
         border: rem(2rem) solid #4069ce;
-        margin-right:rem(22rem);
-        margin-bottom:rem(22rem);
+        margin-right: rem(22rem);
+        margin-bottom: rem(22rem);
         float: left;
-
-        .itemC{
-          width:rem(173rem);
-          height:rem(100rem);
-          background: radial-gradient(#0a81ca,#095eb5,#0943a5);
+        .itemC {
+          width: rem(173rem);
+          height: rem(100rem);
+          background: radial-gradient(#0a81ca, #095eb5, #0943a5);
           display: table-cell;
           vertical-align: middle;
           text-align: center;
           padding: 0 rem(20rem);
-          p{
+          //text-align: center;
+          img{
+            display: inline-block;
+            width: 90%;
+            height: 80%;
+            margin-top:10%;
+          }
+          p {
             @include fz(14px);
             color: #dee7ff;
             line-height: 1.5;
             display: inline-block;
             vertical-align: middle;
           }
-         /* &:after{
-            content: "";
-            display: inline-block;
-            height: 100%;
-            width: 0;
-            vertical-align: middle;
-          }*/
+          /* &:after{
+             content: "";
+             display: inline-block;
+             height: 100%;
+             width: 0;
+             vertical-align: middle;
+           }*/
         }
       }
     }
@@ -288,9 +343,11 @@ footer{
         background: url("../images/logo.png") no-repeat center;
         background-size: 100%;
         margin: 0 rem(20rem);
+
+
       }
       .contact {
-        padding-top:rem(20rem);
+        padding-top: rem(20rem);
         p {
           width: rem(360rem);
           color: #ffffff;
@@ -298,24 +355,24 @@ footer{
           line-height: 1.5;
         }
       }
-      .ma{
-        width:rem(83rem);
-        height:rem(83rem);
-        margin-top:rem(10rem);
-        img{
+      .ma {
+        width: rem(83rem);
+        height: rem(83rem);
+        margin-top: rem(10rem);
+        img {
           width: 100%;
           height: 100%;
           display: block;
           margin: 0 rem(10rem);
-          margin-top:rem(10rem);
+          margin-top: rem(10rem);
         }
       }
     }
-    h5{
+    h5 {
       text-align: center;
       @include fz(12px);
       color: #fffefe;
-      margin-top:rem(20rem);
+      margin-top: rem(20rem);
     }
   }
 }

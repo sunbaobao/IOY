@@ -1,23 +1,28 @@
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
 body {
   min-height: 100vh;
-  background-color: #021b47; }
+  background-color: #001b55; }
 
 .content .mw640 {
-  min-height: 15rem;
+  min-height: 100vh;
   background: url("../images/box.jpg") no-repeat top center;
-  background-size: 100%;
+  background-size: 100% 100%;
   position: relative; }
   .content .mw640 h4 {
-    font-size: 40px;
+    font-size: 26px;
     color: #f8e9c1;
     padding-top: 0.78125rem;
     line-height: 1.5;
     text-align: center;
     font-weight: bold; }
     [data-dpr="2"] .content .mw640 h4 {
-      font-size: 80px; }
+      font-size: 54px; }
     [data-dpr="3"] .content .mw640 h4 {
-      font-size: 120px; }
+      font-size: 82px; }
   .content .mw640 .text {
     height: 2.03125rem;
     background: url("../images/box-text.png") no-repeat center;
@@ -25,14 +30,14 @@ body {
     position: relative;
     z-index: 10; }
   .content .mw640 .time {
-    font-size: 20px;
+    font-size: 16px;
     color: #feec22;
     line-height: 1.5;
     text-align: center; }
     [data-dpr="2"] .content .mw640 .time {
-      font-size: 40px; }
+      font-size: 34px; }
     [data-dpr="3"] .content .mw640 .time {
-      font-size: 60px; }
+      font-size: 52px; }
   .content .mw640 .box {
     position: absolute;
     width: 10rem;
@@ -67,14 +72,14 @@ body {
   .content .mw640 > p {
     position: relative;
     z-index: 10;
-    font-size: 18px;
+    font-size: 14px;
     color: #d5e6f9;
     line-height: 1.5;
     text-align: center; }
     [data-dpr="2"] .content .mw640 > p {
-      font-size: 36px; }
+      font-size: 30px; }
     [data-dpr="3"] .content .mw640 > p {
-      font-size: 54px; }
+      font-size: 46px; }
   .content .mw640 .popM {
     position: fixed;
     width: 100%;
@@ -110,40 +115,40 @@ body {
         top: -0.78125rem;
         right: -0.78125rem; }
       .content .mw640 .popM .popM-content h6 {
-        font-size: 30px;
+        font-size: 26px;
         color: #000000;
         text-align: center;
         margin: 0.85938rem 0; }
         [data-dpr="2"] .content .mw640 .popM .popM-content h6 {
-          font-size: 60px; }
+          font-size: 54px; }
         [data-dpr="3"] .content .mw640 .popM .popM-content h6 {
-          font-size: 90px; }
+          font-size: 82px; }
       .content .mw640 .popM .popM-content .rule {
         padding: 0 0.39063rem; }
         .content .mw640 .popM .popM-content .rule span {
           float: left;
           display: block;
-          font-size: 20px;
+          font-size: 16px;
           color: #000000;
           line-height: 1.5; }
           [data-dpr="2"] .content .mw640 .popM .popM-content .rule span {
-            font-size: 40px; }
+            font-size: 34px; }
           [data-dpr="3"] .content .mw640 .popM .popM-content .rule span {
-            font-size: 60px; }
+            font-size: 52px; }
         .content .mw640 .popM .popM-content .rule p {
-          font-size: 20px;
+          font-size: 16px;
           color: #000000;
           line-height: 1.5;
           padding-left: 0.70313rem; }
           [data-dpr="2"] .content .mw640 .popM .popM-content .rule p {
-            font-size: 40px; }
+            font-size: 34px; }
           [data-dpr="3"] .content .mw640 .popM .popM-content .rule p {
-            font-size: 60px; }
+            font-size: 52px; }
 
 .OContent .mw640 {
-  min-height: 15rem;
+  min-height: 100vh;
   background: url("../images/openbg.jpg") no-repeat top center;
-  background-size: 100% auto; }
+  background-size: 100% 100%; }
   .OContent .mw640 .list {
     padding-top: 3.125rem;
     overflow: hidden;
@@ -152,7 +157,18 @@ body {
     .OContent .mw640 .list .item {
       float: left;
       margin-left: 1.14063rem;
-      width: 7.03125rem; }
+      width: 7.03125rem;
+      position: relative; }
+      .OContent .mw640 .list .item .rotateLight {
+        width: 9rem;
+        height: 9rem;
+        position: absolute;
+        background: url("../images/light.png") no-repeat center;
+        background-size: 100%;
+        z-index: 9;
+        top: -0.46875rem;
+        left: -0.9375rem;
+        -webkit-animation: rotate 10s infinite linear; }
       .OContent .mw640 .list .item .imgW {
         width: 7.5rem;
         height: 7.5rem;
@@ -161,25 +177,27 @@ body {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
-        overflow: hidden; }
+        overflow: hidden;
+        position: relative;
+        z-index: 10; }
         .OContent .mw640 .list .item .imgW img {
           width: 40%;
           margin-bottom: 0.3125rem; }
         .OContent .mw640 .list .item .imgW h3 {
-          font-size: 22px;
+          font-size: 18px;
           color: #ffe50c;
           font-weight: bold; }
           [data-dpr="2"] .OContent .mw640 .list .item .imgW h3 {
-            font-size: 44px; }
+            font-size: 38px; }
           [data-dpr="3"] .OContent .mw640 .list .item .imgW h3 {
-            font-size: 66px; }
+            font-size: 58px; }
         .OContent .mw640 .list .item .imgW p {
-          font-size: 14px;
+          font-size: 12px;
           color: #ffffff; }
           [data-dpr="2"] .OContent .mw640 .list .item .imgW p {
-            font-size: 28px; }
+            font-size: 26px; }
           [data-dpr="3"] .OContent .mw640 .list .item .imgW p {
-            font-size: 42px; }
+            font-size: 40px; }
       .OContent .mw640 .list .item p {
         text-align: center;
         font-size: 12px;
@@ -187,9 +205,9 @@ body {
         line-height: 1.5;
         margin-bottom: 0.15625rem; }
         [data-dpr="2"] .OContent .mw640 .list .item p {
-          font-size: 24px; }
+          font-size: 26px; }
         [data-dpr="3"] .OContent .mw640 .list .item p {
-          font-size: 36px; }
+          font-size: 40px; }
   .OContent .mw640 .getButton {
     height: 1.5625rem;
     background: url("../images/9.png") no-repeat center;
@@ -219,25 +237,26 @@ body {
         .OContent .mw640 .giftList .item .left h4 {
           text-align: center;
           color: #f4083f;
-          font-size: 20px;
+          font-size: 18px;
           padding-top: 0.46875rem;
           font-weight: bold;
           margin-bottom: 0.3125rem; }
           [data-dpr="2"] .OContent .mw640 .giftList .item .left h4 {
-            font-size: 40px; }
+            font-size: 38px; }
           [data-dpr="3"] .OContent .mw640 .giftList .item .left h4 {
-            font-size: 60px; }
+            font-size: 58px; }
         .OContent .mw640 .giftList .item .left p {
-          font-size: 20px;
+          font-size: 16px;
           color: #000000;
           text-align: center; }
           [data-dpr="2"] .OContent .mw640 .giftList .item .left p {
-            font-size: 40px; }
+            font-size: 34px; }
           [data-dpr="3"] .OContent .mw640 .giftList .item .left p {
-            font-size: 60px; }
+            font-size: 52px; }
       .OContent .mw640 .giftList .item .right {
         float: left;
         width: 1.875rem;
+        height: 3.04688rem;
         vertical-align: middle;
         text-align: center; }
         .OContent .mw640 .giftList .item .right:after {
@@ -247,16 +266,17 @@ body {
           vertical-align: middle;
           width: 0; }
         .OContent .mw640 .giftList .item .right p {
-          padding-top: 0.625rem;
+          padding-top: 0rem;
           display: inline-block;
-          font-size: 30px;
+          font-size: 26px;
           color: #fffee3;
           line-height: 1;
+          width: 95%;
           vertical-align: middle; }
           [data-dpr="2"] .OContent .mw640 .giftList .item .right p {
-            font-size: 60px; }
+            font-size: 54px; }
           [data-dpr="3"] .OContent .mw640 .giftList .item .right p {
-            font-size: 90px; }
+            font-size: 82px; }
 .OContent .popM {
   position: fixed;
   width: 100%;
@@ -269,13 +289,13 @@ body {
   .OContent .popM.popM3 {
     display: none; }
     .OContent .popM.popM3 .popM-content .rule p {
-      font-size: 20px;
+      font-size: 16px;
       color: #ffffff;
       line-height: 1.5; }
       [data-dpr="2"] .OContent .popM.popM3 .popM-content .rule p {
-        font-size: 40px; }
+        font-size: 34px; }
       [data-dpr="3"] .OContent .popM.popM3 .popM-content .rule p {
-        font-size: 60px; }
+        font-size: 52px; }
   .OContent .popM.popM2 {
     display: none; }
     .OContent .popM.popM2 .popM-content {
@@ -313,13 +333,13 @@ body {
     .OContent .popM .popM-content .rule span {
       float: left;
       display: block;
-      font-size: 16px;
+      font-size: 14px;
       color: #000000;
       line-height: 1.5; }
       [data-dpr="2"] .OContent .popM .popM-content .rule span {
-        font-size: 32px; }
+        font-size: 30px; }
       [data-dpr="3"] .OContent .popM .popM-content .rule span {
-        font-size: 48px; }
+        font-size: 46px; }
     .OContent .popM .popM-content .rule p {
       font-size: 14px;
       color: #ffffff;
@@ -328,9 +348,9 @@ body {
       padding-right: 0.625rem;
       text-align: center; }
       [data-dpr="2"] .OContent .popM .popM-content .rule p {
-        font-size: 28px; }
+        font-size: 30px; }
       [data-dpr="3"] .OContent .popM .popM-content .rule p {
-        font-size: 42px; }
+        font-size: 46px; }
     .OContent .popM .popM-content .button {
       height: 1.25rem;
       background-repeat: no-repeat;
@@ -347,10 +367,39 @@ body {
 
 @keyframes upDown {
   0% {
-    transform: translateY(0.5rem); }
+    transform: translateY(0.1rem); }
   50% {
-    transform: translateY(-0.5rem); }
+    transform: translateY(-0.1rem); }
   100% {
-    transform: translateY(0.5rem); } }
+    transform: translateY(0.1rem); } }
+#audio {
+  position: absolute;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  width: 0.78125rem;
+  height: 0.78125rem;
+  background: url("../images/mPlaying.png") no-repeat center;
+  background-size: 100%;
+  z-index: 50; }
+  #audio.paused {
+    background-image: url("../images/mPause.png"); }
+
+.link {
+  margin-top: 1.40625rem; }
+  .link a {
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 2;
+    text-align: center;
+    display: block; }
+    [data-dpr="2"] .link a {
+      font-size: 46px; }
+    [data-dpr="3"] .link a {
+      font-size: 70px; }
+  .link .linkCarnival {
+    height: 1.35938rem;
+    display: block;
+    background: url("../images/goIoy.png") no-repeat center;
+    background-size: auto 100%; }
 
 /*# sourceMappingURL=box.css.map */

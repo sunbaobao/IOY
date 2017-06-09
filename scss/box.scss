@@ -1,31 +1,39 @@
 @mixin fz($size) {
   font-size: $size;
   [data-dpr="2"] & {
-    font-size: 2*$size;
+    font-size: 2*$size+2px;
   }
 
   [data-dpr="3"] & {
-    font-size: 3*$size;
+    font-size: 3*$size+4px;
   }
 }
 
 @function rem($px) {
   @return ($px/64);
 }
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform:rotate(0deg);
+  }
+  100% {
+    -webkit-transform:rotate(360deg);
+  }
+
+}
 body{
   min-height: 100vh;
-  background-color: #021b47;
-
+  background-color: #001b55;
 }
 .content {
   .mw640 {
     //min-height: 100vh;
-    min-height: rem(960rem);
+    min-height: 100vh;
     background: url("../images/box.jpg") no-repeat top center;
-    background-size: 100%;
+    background-size: 100% 100%;
     position: relative;
     h4 {
-      @include fz(40px);
+      @include fz(26px);
       color: #f8e9c1;
       padding-top: rem(50rem);
       line-height: 1.5;
@@ -40,7 +48,7 @@ body{
       z-index: 10;
     }
     .time {
-      @include fz(20px);
+      @include fz(16px);
       color: #feec22;
       line-height: 1.5;
       text-align: center;
@@ -87,7 +95,7 @@ body{
     & > p {
       position: relative;
       z-index: 10;
-      @include fz(18px);
+      @include fz(14px);
       color: #d5e6f9;
       line-height: 1.5;
       text-align: center;
@@ -128,7 +136,7 @@ body{
           right: rem(-50rem);
         }
         h6 {
-          @include fz(30px);
+          @include fz(26px);
           color: #000000;
           text-align: center;
           margin: rem(55rem) 0;
@@ -138,12 +146,12 @@ body{
           span {
             float: left;
             display: block;
-            @include fz(20px);
+            @include fz(16px);
             color: #000000;
             line-height: 1.5;
           }
           p {
-            @include fz(20px);
+            @include fz(16px);
             color: #000000;
             line-height: 1.5;
             padding-left: rem(45rem);
@@ -153,13 +161,11 @@ body{
     }
   }
 }
-
 .OContent {
   .mw640 {
-
-    min-height: rem(960rem);
+    min-height: 100vh;
     background: url("../images/openbg.jpg") no-repeat top center;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     .list {
       padding-top: rem(200rem);
       overflow: hidden;
@@ -170,6 +176,18 @@ body{
         float: left;
         margin-left: rem(73rem);
         width: rem(450rem);
+        position: relative;
+        .rotateLight{
+          width:rem(576rem);
+          height:rem(576rem);
+          position: absolute;
+          background: url("../images/light.png") no-repeat center;
+          background-size:100% ;
+          z-index:9;
+          top: rem(-30rem);
+          left: rem(-60rem);
+          -webkit-animation: rotate 10s infinite linear;
+        }
         .imgW {
           width: rem(480rem);
           height: rem(480rem);
@@ -179,6 +197,8 @@ body{
           vertical-align: middle;
           text-align: center;
           overflow: hidden;
+          position: relative;
+          z-index:10;
 
           img {
             //display: block;
@@ -187,12 +207,12 @@ body{
             margin-bottom: rem(20rem);
           }
           h3 {
-            @include fz(22px);
+            @include fz(18px);
             color: #ffe50c;
             font-weight: bold;
           }
           p {
-            @include fz(14px);
+            @include fz(12px);
             color: #ffffff;
 
           }
@@ -241,13 +261,14 @@ body{
           h4 {
             text-align: center;
             color: #f4083f;
-            @include fz(20px);
+            @include fz(18px);
+
             padding-top: rem(30rem);
             font-weight: bold;
             margin-bottom:rem(20rem);
           }
           p {
-            @include fz(20px);
+            @include fz(16px);
             color: #000000;
             text-align: center;
           }
@@ -256,6 +277,7 @@ body{
           //display: table-cell;
           float: left;
           width:rem(120rem);
+          height:rem(195rem);
           vertical-align: middle;
           text-align: center;
           &:after{
@@ -266,25 +288,26 @@ body{
             width: 0;
           }
           p{
-            padding-top:rem(40rem);
+            padding-top:rem(0rem);
             display: inline-block;
-            @include fz(30px);
+            @include fz(26px);
             color: #fffee3;
             line-height:1;
+            width:95%;
+
             vertical-align: middle;
           }
         }
       }
     }
   }
-
   .popM {
     &.popM3{
       display: none;
       .popM-content{
         .rule{
           p{
-            @include fz(20px);
+            @include fz(16px);
             color: #ffffff;
             line-height:1.5;
 
@@ -349,7 +372,7 @@ body{
         span {
           float: left;
           display: block;
-          @include fz(16px);
+          @include fz(14px);
           color: #000000;
           line-height: 1.5;
         }
@@ -380,20 +403,50 @@ body{
     }
   }
 }
-
 .myGift .mw640 {
   background-image: url("../images/mygiftbg.jpg");
 }
-
 @keyframes upDown {
   0% {
-    transform: translateY(0.5rem);
+    transform: translateY(0.1rem);
   }
   50% {
-    transform: translateY(-0.5rem);
+    transform: translateY(-0.1rem);
   }
   100% {
-    transform: translateY(0.5rem);
+    transform: translateY(0.1rem);
   }
 }
+#audio{
+  position: absolute;
+  top: rem(20rem);
+  right: rem(20rem);
+  width:rem(50rem);
+  height:rem(50rem);
+  background: url("../images/mPlaying.png") no-repeat center;
+  background-size: 100%;
+  z-index:50;
+  &.paused{
+background-image: url("../images/mPause.png");
+  }
+}
+.link{
+  margin-top:rem(90rem);
 
+  a{
+    @include fz(22px);
+    color: #ffffff;
+    line-height:2;
+    text-align: center;
+    display: block;
+  }
+  .linkCarnival{
+    height:rem(87rem);
+    display: block;
+    background: url("../images/goIoy.png") no-repeat center;
+    background-size: auto 100%;
+
+  }
+
+
+}

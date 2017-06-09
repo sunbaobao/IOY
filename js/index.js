@@ -50,7 +50,6 @@ define(["jquery", "swiper"],
                 }else {
                     $(".popM1").css("display","block");
                 }
-
             });
             $(".sure").on("click", function () {
                 alert(1);
@@ -70,7 +69,6 @@ define(["jquery", "swiper"],
                     }
                 },"json");
                 alert(2);
-
             });
         });
 

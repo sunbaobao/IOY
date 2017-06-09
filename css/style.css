@@ -3,7 +3,9 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
     padding: 0;
     font: 12px 'Microsoft Yahei', Tahoma, Simsun;
 }
-
+html{
+    font-size: 98px;
+}
 .mw640 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
